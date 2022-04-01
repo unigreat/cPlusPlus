@@ -76,7 +76,7 @@
       </property>
      </widget>
      <widget class="QTextEdit" name="textEditWrite"/>
-     <widget class="QWidget" name="">
+     <widget class="QWidget" name="layoutWidget">
       <layout class="QHBoxLayout" name="horizontalLayout_4">
        <item>
         <spacer name="horizontalSpacer">
