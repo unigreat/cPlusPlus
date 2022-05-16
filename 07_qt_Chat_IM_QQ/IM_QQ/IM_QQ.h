@@ -2,7 +2,8 @@
 #define IM_QQ_H
 
 #include <QWidget>
-
+#include <QToolButton>
+#include <QVector>
 namespace Ui {
 class IM_QQ;
 }

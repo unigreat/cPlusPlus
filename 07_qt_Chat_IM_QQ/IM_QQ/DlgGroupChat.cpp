@@ -213,7 +213,7 @@ void DlgGroupChat::userLeft(QString userName)
 void DlgGroupChat::recvMsg()
 {
     qint64 size = m_pUdpSocket->pendingDatagramSize();  //获取接收报文的长度
-    QByteArray array = QByteArray(size, 0);
+        QByteArray array = QByteArray(size, 0);
     m_pUdpSocket->readDatagram(array.data(), size);
 
     //解析报文协议：类型+姓名+时间+内容

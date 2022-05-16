@@ -9,14 +9,14 @@ DlgContactList::DlgContactList(QWidget *parent) :
     ui->setupUi(this);
 
     setWindowTitle(QStringLiteral("QQ轻聊版 2019"));
-    setWindowIcon(QPixmap(":/images/19.ico"));
+    setWindowIcon(QPixmap("D:/github/Qt-Tcp/07_qt_Chat_IM_QQ/IM_QQ/images/19.ico"));
 
 
 
     QList<QString> nameList;
-    nameList<<"明月清风"<<"上善若水"<<"自由如风"<<"五行缺钱"<<"浅笑心柔"<<"我的意中人是个盖世英雄"
-            <<"洪荒少女"<<"风继续吹"<<"信仰改不了信念"<<"凡人多烦事"<<"不瘦十斤不改名字"<<"~正在缓冲99%"
-           <<"狂吃不胖没办法"<<"全能吃货不挑食"<<"你若安好便是晴天"<<"本人太帅名字无法显示"<<"微微一笑很倾城"<<"执子之手";
+    nameList<<"wangll"<<"guoyh"<<"guoyx"<<"guow"<<"guoy"<<"guodd"
+            <<"guosm"<<"jitm"<<"wanghh"<<"hanjc"<<"hanfg"<<"jitk"
+           <<"jiz"<<"jiw"<<"xiaoxx"<<"selina"<<"cathelin"<<"laozi";
 
 
     QVector<QToolButton*> vToolBtn;
@@ -27,7 +27,7 @@ DlgContactList::DlgContactList(QWidget *parent) :
         //添加头像
         QToolButton* pBtn = new QToolButton;
         pBtn->setText(nameList[i]);
-        QString str = QString(":/images/%1.jpg").arg(i+1);
+        QString str = QString("D:/github/Qt-Tcp/07_qt_Chat_IM_QQ/IM_QQ/images/%1.jpg").arg(i+1);
         pBtn->setIcon(QPixmap(str));
         pBtn->setIconSize(QPixmap(str).size());
         pBtn->setAutoRaise(true);
